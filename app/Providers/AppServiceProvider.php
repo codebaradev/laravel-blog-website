@@ -10,11 +10,11 @@ class AppServiceProvider extends ServiceProvider
      * Register any application services.
      */
 
-    protected $singletons = [
+    public $singletons = [
         \App\Services\UserService::class => \App\Services\UserService::class,
         \App\Services\BlogService::class => \App\Services\BlogService::class,
     ];
-    
+
     public function register(): void
     {
         //
