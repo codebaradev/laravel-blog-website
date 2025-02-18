@@ -18,7 +18,7 @@ class BlogSeeder extends Seeder
         for ($i = 0; $i < 5; $i++) {
             Blog::query()->create([
                 "user_id" => $user->id,
-                "unique_title" => "title_$i",
+                "unique_title" => "title-$i",
                 "title" => "Blog $i",
                 "content" => "Blog Content $i"
             ]);
